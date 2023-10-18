@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let isRunning = false;
 
     function resetButtonStyles() {
-        // Remove a classe "selected" de todos os botões
         pomodoroBtn.classList.remove("selected");
         pequenaPausaBtn.classList.remove("selected");
         longaPausaBtn.classList.remove("selected");
