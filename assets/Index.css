@@ -1,0 +1,65 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-image: url(/assets/imgs/wallpaperbetter\ 2.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+}
+
+#timer {
+    color: white;
+    font-size: 100px;
+}
+
+.buttons-t {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pomodoro-btn, .pequena-pausa-btn, .pausa-longa-btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.buttons-pr {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.start-btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+.selected {
+    background-color: white;
+    color: black;
+}
+
+.not-selected {
+    background-color: transparent;
+    color: white;
+}
