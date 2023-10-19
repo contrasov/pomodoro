@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 startBtn.textContent = "INICIAR";
                 isRunning = false;
 
-                const alarmSound = new Audio('./assets/songs/1.mp3');
+                const alarmSound = new Audio('/src/songs/1.mp3');
                 alarmSound.play();
             }
         }, 1000);
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     pequenaPausaBtn.addEventListener("click", function () {
         stopTimer();
-        timerElement.textContent = "05:00";
+        timerElement.textContent = "00:05";
     });
 
     longaPausaBtn.addEventListener("click", function () {
