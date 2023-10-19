@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,700">
     <link rel="icon" href="/src/imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>LoFI - Pomo</title>
 </head>
 <body>
@@ -16,18 +18,35 @@
             <button class="pausa-longa-btn">PAUSA LONGA</button>
         </div>
         <h1 id="timer">00:00</h1>
-        <div class="buttons-pr"> <!-- botoões de controle do tempo -->
+        <div class="buttons-pr">
             <button class="start-btn">INICIAR</button>
         </div>
-    </div>     
-    <iframe
-    id="youtube-audio"
-    width="400"
-    height="200"
-    src="https://www.youtube.com/embed/VDE7Ovbd3-E?autoplay=1&controls=1&mute=0&loop=0&rel=0&modestbranding=1&showinfo=0&color=white"
-    frameborder="0"
-    allowfullscreen>
-    </iframe>
+    </div>
+    <div class="card-down">
+        <img src="/src/icons/music.svg" alt="musicas" id="icon">
+        <img src="/src/icons/rain.svg" alt="chuva" id="icon-r">
+        <img src="/src/icons/keyboard.svg" alt="keyboard" id="icon-k">
+        <div class="menu" id="menu">
+            <div class="carousel">
+                <div class="youtube-video">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/g3yFIHcXn4A?si=tAPMLmeTX9_CF58j" frameborder="0"></iframe>
+                </div>
+                <div class="youtube-video">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/7MJBeAyU1As?si=wyjeMD-oVyw9ZMmO" frameborder="0"></iframe>
+                </div>
+                <div class="youtube-video">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/zmQ1ClFs4ZA?si=EVJzHxq9Ddb8tGVq" frameborder="0"></iframe>
+                </div>
+                <div class="youtube-video">
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/aMJyQK4xBUQ?si=nLCJsnB5v9ZH3Yvu" frameborder="0"></iframe>
+                </div>
+                <!-- Adicione mais vídeos conforme necessário -->
+            </div>
+        </div>
+    </div>
+       
     <script src="/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

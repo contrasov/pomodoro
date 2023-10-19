@@ -34,6 +34,73 @@ document.addEventListener("DOMContentLoaded", function () {
     longaPausaBtn.addEventListener("click", setLongaPausaTime);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const icon = document.getElementById("icon-r");
+    let audio; 
+
+    icon.addEventListener("click", function() {
+        if (!audio) {
+            audio = new Audio("/src/songs/chuva.mp3");
+            audio.volume = 0.01; 
+            audio.loop = true;
+        }
+
+        if (audio.paused) {
+            audio.play();
+            icon.classList.add("active2"); // Adicione a classe "active" para definir o estilo de fundo branco
+        } else {
+            audio.pause();
+            icon.classList.remove("active2"); // Remova a classe "active" para restaurar o estilo original
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const icon = document.getElementById("icon-k");
+    let audio; 
+
+    icon.addEventListener("click", function() {
+        if (!audio) {
+            audio = new Audio("/src/songs/teclado.mp3");
+            audio.volume = 0.02; 
+            audio.loop = true;
+        }
+
+        if (audio.paused) {
+            audio.play();
+            icon.classList.add("active"); // Adicione a classe "active" para definir o estilo de fundo branco
+        } else {
+            audio.pause();
+            icon.classList.remove("active"); // Remova a classe "active" para restaurar o estilo original
+        }
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const icon = document.getElementById("icon");
+    const menu = document.getElementById("menu");
+    const carousel = document.querySelector(".carousel");
+
+    icon.addEventListener("click", function() {
+        if (menu.style.display === "block") {
+            menu.style.display = "none"; // Fecha o menu
+            icon.classList.remove("active3");
+        } else {
+            menu.style.display = "block"; // Abre o menu
+            icon.classList.add("active3");
+
+            $(carousel).slick({
+                slidesToShow: 1,
+                arrows: true, 
+            });
+        }
+    });
+});
+
+
+
 //////////////////////Contagem Regressiva//////////////////////////////////////
 
 document.addEventListener("DOMContentLoaded", function () {

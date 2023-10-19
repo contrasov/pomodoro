@@ -1,3 +1,4 @@
+
 body {
     font-family: "Inter", sans-serif;
     background-image: url(/src/imgs/wallpaperbetter\ 2.png);
@@ -10,6 +11,62 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;  
+}
+
+.card-down {
+    position: absolute;
+    border-radius: 10px;
+    width: 22%;
+    height: 38px;
+    top: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-down img {
+    margin: 10px;
+    background: rgba(13, 20, 30, 0.50);   
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.card-down img.active {
+    background-color: white;
+    content: url("/src/icons/keyboard-b.svg");
+}
+
+.card-down img.active2 {
+    background-color: white;
+    content: url("/src/icons/rain-b.svg");
+}
+
+.card-down img.active3 {
+    background-color: white;
+    content: url("/src/icons/music-b.svg");
+}
+
+#icon-k {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    background: rgba(13, 20, 30, 0.50);   
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+}
+
+.menu.white-bg {
+    background: #fff;
 }
 
 #timer {
