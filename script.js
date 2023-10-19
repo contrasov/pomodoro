@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     pequenaPausaBtn.addEventListener("click", function () {
         stopTimer();
-        timerElement.textContent = "00:05";
+        timerElement.textContent = "05:00";
     });
 
     longaPausaBtn.addEventListener("click", function () {
